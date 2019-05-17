@@ -19,6 +19,6 @@ corpus = [dictionary.doc2bow(text) for text in texts]
 
 hdpmodel = HdpModel(corpus=corpus, id2word=dictionary)
 
-hdptopics = hdpmodel.show_topics(formatted=False)
+print(hdpmodel.print_topics(1000, 1))
 
-print(hdptopics)
+#print(hdptopics)
